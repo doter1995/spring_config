@@ -5,8 +5,8 @@ services:
   user-service:
     host: user-service
     port: 8081
-  zuul:
-    host: zuul
+  gateway:
+    host: gateway
     port: 8080
 
 db:
