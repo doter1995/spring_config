@@ -45,4 +45,4 @@ logging:
         security: INFO
 
 server:
-  port: ${services.${name}.port}
+  port: ${services.${spring.application.name}.port}
