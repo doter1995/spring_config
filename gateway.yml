@@ -1,5 +1,4 @@
-
-zuul:
+gateway:
   prefix: /api
   sensitive-headers: 
   routes:
