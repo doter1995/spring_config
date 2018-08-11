@@ -5,6 +5,9 @@ services:
   user-service:
     host: user-service
     port: 8081
+  zuul:
+    host: zuul
+    port: 8080
 
 db:
   host: mysql
@@ -16,7 +19,9 @@ db:
 todo-service:
   ribbon:
     listOfServers: ${services.todo-service.host}:${services.todo-service.port}
-
+user-service:
+  ribbon:
+    listOfSercers: ${services.todo-service.host}:${services.todo-service.port}
 spring:
   jpa:
     hibernate:
