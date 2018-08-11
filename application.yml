@@ -21,7 +21,7 @@ todo-service:
     listOfServers: ${services.todo-service.host}:${services.todo-service.port}
 user-service:
   ribbon:
-    listOfSercers: ${services.todo-service.host}:${services.todo-service.port}
+    listOfSercers: ${services.user-service.host}:${services.user-service.port}
 spring:
   jpa:
     hibernate:
