@@ -3,10 +3,10 @@ gateway:
   sensitive-headers: 
   routes:
     todo-service:
-      path: /todo**
+      path: /todo/**
       serviceId: todo-service
-      strip-prefix: false
+      strip-prefix: true
     user-service:
-      path: /user**
+      path: /user/**
       serviceId: user-service
-      strip-prefix: false
+      strip-prefix: true
